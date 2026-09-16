@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Melanin Solutions Ltd</title>
+<meta name="description" content="Melanin Solutions Ltd — a registered software and digital solutions company based in Kericho, Kenya.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #14201c;
+    --surface: #1a2822;
+    --text: #eef3ef;
+    --muted: #93a69c;
+    --accent: #c98a3a;
+    --line: #2c3e36;
+    --max: 760px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+
+  header.site {
+    border-bottom: 1px solid var(--line);
+    padding: 28px 0;
+  }
+  header.site .wrap {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .wordmark {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.15rem;
+    letter-spacing: 0.01em;
+  }
+  .locale {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    padding: 72px 0 48px;
+  }
+  .hero h1 {
+    font-family: 'Fraunces', serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    line-height: 1.15;
+    margin: 0 0 22px;
+    max-width: 16ch;
+  }
+  .hero p {
+    max-width: 58ch;
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin: 0;
+  }
+  .rule {
+    width: 64px;
+    height: 2px;
+    background: var(--accent);
+    border: none;
+    margin: 40px 0 0;
+  }
+
+  section.row {
+    border-top: 1px solid var(--line);
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    gap: 24px;
+  }
+  section.row h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 1.05rem;
+    margin: 0;
+    color: var(--text);
+  }
+  section.row .content { min-width: 0; }
+  section.row .content p { margin: 0 0 14px; max-width: 58ch; }
+  section.row .content p:last-child { margin-bottom: 0; }
+
+  ul.plain {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 14px;
+  }
+  ul.plain li {
+    padding-left: 18px;
+    border-left: 2px solid var(--line);
+    max-width: 58ch;
+  }
+  ul.plain li strong {
+    display: block;
+    color: var(--text);
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  ul.plain li span { color: var(--muted); font-size: 0.95rem; }
+
+  dl.facts {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px 20px;
+    max-width: 58ch;
+  }
+  dl.facts dt { color: var(--muted); font-size: 0.92rem; }
+  dl.facts dd { margin: 0; font-weight: 500; }
+
+  .contact-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+
+  footer.site {
+    border-top: 1px solid var(--line);
+    padding: 28px 0 48px;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 640px) {
+    section.row { grid-template-columns: 1fr; gap: 10px; }
+    .hero { padding: 52px 0 36px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <span class="wordmark">Melanin Solutions</span>
+    <span class="locale">Kericho, Kenya</span>
+  </div>
+</header>
+
+<div class="hero wrap">
+  <h1>Software and digital solutions, built from Kericho.</h1>
+  <p>
+    Melanin Solutions Ltd is a registered Kenyan company designing and
+    building mobile applications for everyday use — from utility tools to
+    consumer apps published on Google Play.
+  </p>
+  <hr class="rule">
+</div>
+
+<div class="wrap">
+
+  <section class="row" id="about">
+    <h2>About</h2>
+    <div class="content">
+      <p>
+        Founded by Gideon Kipngetich, Melanin Solutions Ltd operates out of
+        Tegutwo Plaza on Litein Town Road, Kericho. We build and maintain
+        mobile applications, with a focus on simple, dependable tools that
+        solve real day-to-day problems for our users.
+      </p>
+    </div>
+  </section>
+
+  <section class="row" id="what-we-do">
+    <h2>What we do</h2>
+    <div class="content">
+      <ul class="plain">
+        <li><strong>App development</strong><span>Design and development of Android applications, from concept through to Play Store release.</span></li>
+        <li><strong>Maintenance &amp; support</strong><span>Ongoing updates, bug fixes, and performance improvements for published apps.</span></li>
+        <li><strong>Product consulting</strong><span>Advice on features, structure, and launch strategy for early-stage app ideas.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="row" id="registration">
+    <h2>Registration</h2>
+    <div class="content">
+      <dl class="facts">
+        <dt>Business name</dt><dd>Melanin Solutions Ltd</dd>
+        <dt>Business no.</dt><dd>BN-6PDMSL5</dd>
+        <dt>Registered under</dt><dd>Registration of Business Names Act (Cap. 499, Section 14)</dd>
+        <dt>Address</dt><dd>Tegutwo Plaza, Litein Town Rd, Kericho, Buret District, P.O. Box 331, 20406</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="row" id="contact">
+    <h2>Contact</h2>
+    <div class="content">
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:vaultiq.apps@gmail.com">vaultiq.apps@gmail.com</a></li>
+        <li>Phone: <a href="tel:+254798629580">+254 798 629 580</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="row" id="privacy">
+    <h2>Privacy</h2>
+    <div class="content">
+      <p>
+        Melanin Solutions Ltd does not collect personal information through
+        this website beyond what is voluntarily submitted via the contact
+        details above. For data handling within our applications, refer to
+        the privacy policy listed on each app's Google Play page.
+      </p>
+      <p>Last updated: September 2026</p>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    &copy; <span id="year"></span> Melanin Solutions Ltd. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
